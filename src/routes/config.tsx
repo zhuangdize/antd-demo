@@ -22,7 +22,7 @@ import { SyncRoute } from './type';
 // path配置时最好使用完整路径
 export const routes: SyncRoute[] = [
   {
-    path: '/',
+    path: '/index',
     component: React.lazy(() => import('@/App')),
   },
   {
