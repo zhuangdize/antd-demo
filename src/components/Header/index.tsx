@@ -15,7 +15,7 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({ hideProjectSelect, hideUserInfo }) => {
-  const { user } = useSelector((state: { base: BaseState }) => state.base);
+  // const { user } = useSelector((state: { base: BaseState }) => state.base);
   const [items, setItems] = useState<MenuProps['items']>([]);
 
   useEffect(() => {
@@ -45,8 +45,8 @@ const Header: React.FC<Props> = ({ hideProjectSelect, hideUserInfo }) => {
             placement="bottomRight"
           >
             <div>
-              <div className="user-avatar">{user?.username?.[0]}</div>
-              <span className="user-name">{user?.username}</span>
+              {/* <div className="user-avatar">{user?.username?.[0]}</div> */}
+              {/* <span className="user-name">{user?.username}</span> */}
             </div>
           </Dropdown>
         )}

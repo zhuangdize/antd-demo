@@ -57,7 +57,7 @@ export const LayoutWithoutAside: React.FC<{
   return (
     <BaseLayout>
       <ALayout className="atlas-layout">
-        <Header hideProjectSelect={hideProjectSelect} hideUserInfo={hideUserInfo} />
+      <Header />
         <ALayout.Content className={classNames('atlas-layout_content', contentClass)}>
           {children}
         </ALayout.Content>
@@ -66,4 +66,4 @@ export const LayoutWithoutAside: React.FC<{
   );
 };
 
-export default Layout;
+export default LayoutWithoutAside;

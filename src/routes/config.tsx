@@ -23,8 +23,6 @@ import { SyncRoute } from './type';
 export const routes: SyncRoute[] = [
   {
     path: '/',
-    root: true,
-    id: 'index',
     component: React.lazy(() => import('@/App')),
   },
   {

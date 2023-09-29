@@ -12,19 +12,19 @@ const buildSyncRoute = (routes: SyncRoute[]): RouteObject[] => {
 
     syncRoutes.push({
       ...others,
-      id,
-      loader: async (...params) => {
-        if (id === 'index') return loader?.(...params);
+      // id,
+      // loader: async (...params) => {
+      //   // if (id === 'index') return loader?.(...params);
 
-        const res = await loader?.(...params);
-        // 传入当前菜单配置中的部分数据，供页面内直接通过useLoaderData获取
-        return { title: route.title, ...(res || {}) };
-      },
+      //   // const res = await loader?.(...params);
+      //   // 传入当前菜单配置中的部分数据，供页面内直接通过useLoaderData获取
+      //   return { title: route.title, };
+      // },
       path: route.path,
       element: Component ? (
         <Component />
       ) : (
-        element
+        null
       ),
       errorElement: <ErrorBoundary />,
       children: children && buildSyncRoute(children),
