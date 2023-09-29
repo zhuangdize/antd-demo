@@ -1,0 +1,93 @@
+@import '~@/less/variable';
+
+.atlas-layout_header {
+  display: flex;
+  align-items: center;
+
+  .logo {
+    margin: 14px 40px 14px 0;
+    vertical-align: middle;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    .user-avatar {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: #174add;
+      border-radius: 50%;
+      line-height: 24px;
+      text-align: center;
+      color: #fff;
+      margin-right: 8px;
+    }
+
+    .user-name {
+      cursor: pointer;
+      .text-large();
+    }
+  }
+}
+
+.nav-dropdown.ant-dropdown {
+  .ant-dropdown-menu {
+    width: 161px;
+
+    .ant-dropdown-menu-item {
+      padding: 9px 12px;
+    }
+  }
+}
+
+.atlas-help-center {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  height: 32px;
+  margin-right: 24px;
+  background-color: #EAF1FF;
+  border-radius: 17px;
+  overflow: hidden;
+
+  .help-center {
+    margin-right: 8px;
+    color: #393C40;
+  }
+
+  .text {
+    line-height: 22px;
+    font-size: 14px;
+    padding-right: 12px;
+    color: #393C40;
+  }
+
+  .help-info-markque {
+    width: 156px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #727981;
+    border-left: 2px solid #fff;
+    padding-left: 12px;
+
+    // div {
+    //   width: 100%;
+    //   overflow: hidden;
+    //   white-space: nowrap;
+    //   text-overflow: ellipsis;
+    // }
+
+    a {
+      width: 145px;
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #727981;
+    }
+  }
+}

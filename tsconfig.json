@@ -1,26 +1,34 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "allowSyntheticDefaultImports": true, //对于没有export的库进行兼容
+    "jsx": "react",
+    "strict": false, //严格模式
+    "experimentalDecorators": true, //开启修饰者模式
+    "target": "es5", //选择输出es版本
+    "module": "esnext", //采用的系统模块
+    "moduleResolution": "node", //如何处理模块
+    "isolatedModules": false,
+    "allowJs": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
     "lib": [
       "dom",
-      "dom.iterable",
-      "esnext"
+      "es5",
+      "es6",
+      "es7",
+      "esnext",
+      "es2015"
     ],
-    "allowJs": true,
-    "skipLibCheck": true,
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "forceConsistentCasingInFileNames": false,
+    "sourceMap": true,
+    "pretty": true,
+    "downlevelIteration": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "antd/*": ["node_modules/antd/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
